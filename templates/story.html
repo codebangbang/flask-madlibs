@@ -1,17 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block title%}Your Story{% endblock %}
+{% block content %}
+<h1>Here is your completed story of {{title}}</h1>
+<p>{{ text }} </p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Story</title>
-</head>
-
-<body>
-    <h1>Here is your completed story</h1>
-    <p>{{ text}} </p>
-
-    <p>Wow! You are such a great story teller!</p>
-</body>
-
-</html>
+<p>Wow! You are such a great story teller!</p>
+{% endblock %}
